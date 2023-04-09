@@ -527,6 +527,16 @@ body {
   text-align: center;
 }
 
+* {
+	float: none;
+	position: static;
+}
+ 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 @media only screen and (max-width: 540px) {
   #gnav li {
     font-size: 8px;
