@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+   <a class="navbar-brand">Engineer</a>
+      <span class="navbar-toggler-icon"></span>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <a class="nav-link" href="#PROFILE">PROFILE</a>
+            
+            <a class="nav-link" href="#SKILL">SKILL</a>
+            
+            <a class="nav-link" href="#WORKS">WORKS</a>
+            
+            <a class="nav-link" href="#CONTACT">CONTACT</a>
+          </ul>
+        </div>
+  </nav>
+  
+  <header id="header">
+    <div class="container">
+      <h2>Welcome to <br> Masanori Ando's <br> portfolio</h2>
+    </div>
+    <script src="anime.min.js"></script>
+    <script>
+      const container = document.querySelector(".container");
+        for (var i = 0; i <= 50; i++) {
+          const blocks = document.createElement("div");
+           blocks.classList.add("block");
+           container.appendChild(blocks);
+            }
+          function animateBlocks() {
+            anime({
+             targets: ".block",
+            translateX: function() {
+              return anime.random(-800, 700);
+                },
+            translateY: function () {
+              return anime.random(-500, 500);
+                },
+            scale: function() {
+              return anime.random(1, 2);
+                    },
+                duration: 2500,
+                delay: anime.stagger(15),
+                complete: animateBlocks,
+                });
+            }
+            animateBlocks();
+    </script>
+  </header>
+  
+  <main id="contents">
+    
+    <!--PROFILE-->
+    <table>
+      <tr>
+       <div class="container">
+        <div class="row" id="PROFILE">
+          <div class="col-md-4">
+            <h2>PROFILE</h2>
+              </div>
+          <div class="two-column-wrapper">
+          <div class="left-column-img">
+           <img src="img/profile/profile.JPG" alt="">
+          </div>
+          <div class="right-column">
+           <p>
+              はじめまして。平成14年生まれの20歳エンジニアのあんどうまさのりと申します。
+              立教大学 経済学部 3年生です。<br>
+              小、中、高校とずっと野球をしてきて、大学在籍途中で
+              就職する際に自信を持ってできる自分のスキルについて考えた時に不安を覚え、このままの実力で社会人として活躍するのは厳しいと判断し、
+              自分の力で生み出していけるようなプログラミングなど(特にAI)の将来的に需要が伸びていくと思われるスキルが必要だと感じてプログラミング学習を始めました。<br>
+              そこから独学でプログラミングを1年ほど学び、progateから学習を始め、ドットインストールなどを学び、自分で勉強していくうちに勉強だけでなく、もっと開発をし、作品を自動的に動かしていきたいということで、
+              YouTubeやサイトなどでプログラムの仕方などを学び、現在さまざまなアプリ開発やサイトなどを作成しております。<br>
+              プログラミングはもちろんエラーなど動作が順調に実行されないことも多く、そのような理由などから、ある調査ではプログラミング挫折率が90%となっています。
+              (私はネット検索やchatGPTで全て自己解決できています。)
+              そんなプログラミングに対し、①将来を見据え、プログラミングをするというすぐに方向転換したような決断力と、
+              ②上記の詰まってしまう難しい状況を突破できるようなスポーツで培った物事をやり続ける体力と根性と気持ちは人一倍あると自負しております。<br>
+              よろしくお願いします。<br>
+                <br>
+              趣味 ランニング・ジムで筋トレ・サウナ・読書・東京グルメ巡り
+          </p>
+          </div>
+          </div>
+          </div>
+          </div>
+     </tr>
+            
+    <!--SKILL-->  
+    <section class="section" id="SKILL" style="padding-top: 31.5px;">
+     <div class="section-title-block">
+      <h2 class="section-title"><span class="section-title-css">SKILL</span></h2>
+      <h3>今まで私が行ってきた技術、経験年数、スキルのレベルを記載致します。</h3> 
+      <table class="table table-borderless"></table>
+     <div class="inner">
+    <div class="card">
+    <div class="skill-desc">
+     <h3 class="skill-desc-title"><i class="fas fa-database"></i>デザイン・コーディング</h3>
+    <table class="table table-borderless">
+    <thead>
+      <tr>
+       <th scope="col">技術</th>
+       <th scope="col">経験年数</th>
+       <th scope="col">スキル</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <th scope="row">HTML</th>
+       <td>1年</td>
+       <td><p class="rate-rate5"></p></td>
+      </tr>
+      <tr>
+        <th scope="row">CSS</th>
+        <td>1年</td>
+        <td><p class="rate-rate5"></p></td>
+     </tr>
+     </tbody>
+     </table>
+     </div>
+     </div>
+     </div>
+     <div class="inner">
+     <div class="card">
+     <div class="skill-desc">
+     <h3 class="skill-desc-title"><i class="fas fa-database"></i>フロントエンド</h3>
+    <table class="table table-borderless">                    
+    <thead>
+     <tr>
+      <th scope="col">技術</th>
+      <th scope="col">経験年数</th>   
+      <th scope="col">スキル</th>
+     </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">javascript</th>
+      <td>1年</td>
+      <td><p class="rate-rate4"></p></td>
+    </tr>
+    <tr>
+      <th scope="row">jquery</th>
+      <td>7、8ヶ月</td>
+      <td><p class="rate-rate3"></p></td>
+    </tr>
+    <tr>
+      <th scope="row">React</th>
+      <td>10ヶ月</td>
+      <td><p class="rate-rate3"></p></td>
+    </tr>
+    </tbody>
+  </table>
+   </div>
+   </div>
+   </div>
+    <div class="inner">
+    <div class="card">
+    <div class="skill-desc">
+    <h3 class="skill-desc-title"><i class="fas fa-database"></i>バックエンド</h3>
+    <p>開発の際、Pythonを使用することが多いです。</p>
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">技術</th>
+          <th scope="col">経験年数</th>
+          <th scope="col">スキル</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Python</th>
+          <td>1年</td>
+          <td><p class="rate-rate4"></p></td>
+        </tr>  
+        <tr>
+          <th scope="row">PHP</th>
+          <td>10ヶ月</td>
+          <td><p class="rate-rate3"></p></td>
+        </tr>
+        <tr>
+          <th scope="row">Ruby</th>
+          <td>1年</td>
+          <td><p class="rate-rate3"></p></td>
+        </tr>
+        <tr>
+          <th scope="row">Node.js</th>
+          <td>1年</td>
+          <td><p class="rate-rate3"></p></td>
+        </tr>
+      </tbody>
+      </table>
+      </div>
+      </div>
+      </div>
+      <div class="inner">
+      <div class="card">
+      <div class="skill-desc">
+        <h3 class="skill-desc-title"><i class="fas fa-server"></i>DB</h3>
+      <table class="table table-borderless">
+      <thead>
+        <tr>
+         <th scope="col">技術</th>
+         <th scope="col">経験年数</th>
+         <th scope="col">スキル</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <th scope="row">MySQL</th>
+         <td>10ヶ月</td>
+         <td><p class="rate-rate3"></p></td>
+        </tr>
+      </tbody>
+      </table>
+      </div>
+      </div>
+      </div>
+      <div class="inner">
+      <div class="card">
+      <div class="skill-desc">
+        <h3 class="skill-desc-title"><i class="fas fa-toolbox"></i>その他</h3>
+      <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">技術</th>
+          <th scope="col">経験年数</th>
+          <th scope="col">スキル</th>
+        </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <th scope="row">git</th>
+          <td>10ヶ月</td>
+          <td><p class="rate-rate2"></p></td>
+        </tr>  
+      </tbody>
+      </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+        
+<!--WORKS-->
+<tr>
+<section class="section" id="WORKS" style="padding-top: 31.5px;">
+  <div class="inner">
+  <div class="section-title-block">
+    <h2 class="section-title"><i class="fas fa-tasks fa-lg"><span class="section-title-css">WORKS</span></i></h2>
+  <div class="section-desc"></div>
+  </div>
+  <div class="card-wrapper my-gallery">
+    <figure class="card">
+     <img class="card-image" src="img/works/thumb/portfolio.JPG" alt="" />
+      <figcaption class="card-caption">
+        <p class="card-caption-title">ポートフォリオ</p>
+        <p class="card-caption-info">自分自身のポートフォリオです。</p>
+        <p class="card-caption-url"><a class="url-link" href="https://github.com/AndoMasa/portfolio" target="_blank">git hub</a></p>
+      </figcaption>
+    </figure>
+    <figure class="card">
+       <img class="card-image" src="img/works/thumb/facelocation.JPG" alt="" />
+      <figcaption class="card-caption">
+        <p class="card-caption-title">自動顔認証判別機</p>
+        <p class="card-caption-info">人などの顔を自動でそれぞれ判別できます。<br>
+          今回は安倍首相(A)とオバマ大統領(B)を認識できるように作成しています。
+        </p>
+        <p class="card-caption-url"><a class="url-link" href="https://github.com/AndoMasa/facelocation" target="_blank">git hub</a></p>
+      </figcaption>
+    </figure>
+    <figure class="card">
+        <img class="card-image" src="img/works/thumb/QRcode.JPG" alt="" />
+      <figcaption class="card-caption">
+        <p class="card-caption-title">QRコード自動生成サイト</p>
+        <p class="card-caption-info">ボタンを押せば、自動で重複することなくQRコードを生成できます。</p>
+        <p class="card-caption-url"><a class="url-link" href="https://github.com/AndoMasa/QR-auto--generated-application" target="_blank">git hub</a></p>
+      </figcaption>
+    </figure>
+    <figure class="card">
+        <img class="card-image" src="img/works/thumb/calculator.JPG" alt="" />
+      <figcaption class="card-caption">
+        <p class="card-caption-title">複数の動画の長さの<br>総時間自動計算機</p>
+        <p class="card-caption-info">ファイルなどにある大量の動画の長さをまとめ、総時間をすぐに計算できます。</p>
+        <p class="card-caption-url"><a class="url-link" href="https://github.com/AndoMasa/video-length-calculator" target="_blank">git hub</a></p>
+      </figcaption>
+    </figure>
+    <figure class="card">
+       <img class="card-image" src="img/works/thumb/invader-game.JPG" alt="" />
+      <figcaption class="card-caption">
+        <p class="card-caption-title">インベーダーゲーム</p>
+        <p class="card-caption-info">懐かしいインベーダーゲームを作りました！
+        </p>
+        <p class="card-caption-url"><a class="url-link" href="https://github.com/AndoMasa/python-invader-game" target="_blank">git hub</a></p>
+      </figcaption>
+    </figure>
+    </div>
+    </div>
+  </section>
+  </div>  
+  </tr>
+  <tr>
+<div class="row" id="CONTACT">
+  <div class="col-md-4">
+   <h2>CONTACT</h2>
+   <h3>何かご連絡等ございましたらtwitterのDMの方からご連絡をよろしくお願いします。</h3>
+  </div>
+  </div>  
+  <div class="contact-wrapper">
+   <div class="contact-list" style="text-align: center;">
+      <a href="https://twitter.com/andomasa_417?s=11&t=JtdQBK9INht7kiCJKkYoCg" target="_blank">
+      <img src="img/contact/contact.JPG" alt="" class="contact-img" style="margin: 0 auto;">  
+      <span class="contact-list-desc">Twitter</span></a>
+    </div>
+  </div>
+  </tr>
+</table>
+</main>
+
+<p id="pagetop"><a href="#">PAGE TOP</a></p>
+
+<footer id="footer">
+  <div class="inner">
+    <nav class="footer-link">
+      <ul>
+        <li><a href="#PROFILE">PROFILE</a></li>
+        <li><a href="#SKILL">SKILL</a></li>
+        <li><a href="#WORKS">WORKS</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
+      </ul>
+    </nav>
+    <p class="copyright">Copyright&copy; Masanori Ando. All Rights Reserved.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
