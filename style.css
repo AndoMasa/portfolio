@@ -234,6 +234,8 @@ h2 {
 .card {
   display: flex;
   margin-bottom: 50px;
+  width: 90%;
+  margin-left: 25px;
 }
 
 .card-image {
@@ -355,10 +357,10 @@ h2 {
 
 
 @media only screen and (max-width: 470px) {
-  html {
+html {
   overflow-x: hidden;
 }
-  
+
   .container {
     margin-top: 20%;
     display: flex;
@@ -424,14 +426,14 @@ h2 {
   }
 
   .card-caption-title {
-    margin-left: 50px;
+    margin-left: 70px;
     font-size: 15px;
     font-weight: bold;
   }
 
   .card-image {
     height: 120px;
-    width: 150px;
+    width: 130px;
     display: block;
     margin-bottom: 8px;
   }
