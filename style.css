@@ -354,6 +354,10 @@ h2 {
 
 
 @media only screen and (max-width: 470px) {
+  html {
+  overflow-x: hidden;
+}
+  
   .container {
     margin-top: 20%;
     display: flex;
