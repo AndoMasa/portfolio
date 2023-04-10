@@ -237,7 +237,8 @@ h2 {
 }
 
 .card-image {
-  width: 45%;
+  height: 20%;
+  width: 40%;
   display: block;
   margin-bottom: 8px;
 }
@@ -249,7 +250,7 @@ h2 {
 }
 
 .card-caption-info {
-  font-size: 12px;
+  font-size: 15px;
   margin-left: 20%;
 }
 
